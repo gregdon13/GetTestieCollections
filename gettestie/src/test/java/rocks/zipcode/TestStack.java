@@ -39,8 +39,24 @@ public class TestStack {
 
     @Test
     public void pushStackTest() {
+        Stack<String> stack = new Stack<>();
+        Stack<String> expected = new Stack<>();
+        Stack<String> different = new Stack<>();
+        different.push("blah");
+        expected.push("words");
+        stack.push("words");
 
+        assertEquals(expected, stack);
+        assertFalse(expected == different);
     }
 
+    @Test
+    public void peekStackTest() {
+        Stack<String> stack = new Stack<>();
+        stack.push("lava");
+
+
+        assertEquals("lava", stack.peek());
+    }
 
 }
