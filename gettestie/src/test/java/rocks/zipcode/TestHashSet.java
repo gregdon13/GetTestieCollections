@@ -50,14 +50,4 @@ public class TestHashSet {
         Assert.assertTrue(set.isEmpty());
     }
 
-//    @Test
-//    public void HashSetClone() {
-//        HashSet<String> original = new HashSet<>();
-//        original.add("can");
-//        original.add("cat");
-//
-//        Set<String> copy = (Set<String>) original.clone();
-//
-//        Assert.assertEquals(original, copy);
-//    }
 }
