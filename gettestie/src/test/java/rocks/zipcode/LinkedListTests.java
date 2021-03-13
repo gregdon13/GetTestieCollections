@@ -45,4 +45,25 @@ public class LinkedListTests {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void containsTest() {
+        LinkedList<String> heroList = new LinkedList<>();
+        heroList.add("Cap");
+        heroList.add("Hawkeye");
+        heroList.add("Vision");
+
+        Assert.assertTrue(heroList.contains("Hawkeye"));
+    }
+
+    @Test
+    public void isEmptyTestAndClearTest() {
+        LinkedList<String> heroList = new LinkedList<>();
+        heroList.add("Cap");
+        heroList.add("Hawkeye");
+        heroList.add("Vision");
+        heroList.clear();
+
+        Assert.assertTrue(heroList.isEmpty());
+    }
 }
